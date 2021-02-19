@@ -1,4 +1,6 @@
-const app = require('fastify')({ logger: true });
+const fastify = require('fastify');
+
+const app = fastify();
 
 app.get('/', (req, res) => {
   res.send('Hello!');
